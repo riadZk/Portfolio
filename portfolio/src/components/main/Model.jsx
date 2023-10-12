@@ -7,7 +7,7 @@ const Model = ({ activeID, setShowModal }) => {
   const [portfolios , setPortfolios] = useState([]);
   Axios.defaults.withCredentials = true;
   useEffect(() => {
-      Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/projects')
+       Axios.get('https://portfolio-api-seven-psi.vercel.app/api/projects')
       .then((res) => setPortfolios(res.data))
   }, []);
   const portfolio = portfolios.find((prt) => prt._id === JSON.parse(activeID));
