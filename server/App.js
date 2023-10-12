@@ -10,7 +10,9 @@ app.use(express.json());
 
 // Skills
 app.use('/api/skills',require('./routes/skills'));
-
+app.get('/',(req,res) =>{
+    res.send('Server is running');
+})
 // Projects
 app.use('/api/projects',require('./routes/projects'));
 
