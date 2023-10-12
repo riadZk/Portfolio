@@ -16,7 +16,7 @@ app.use('/api/skills',require('./routes/skills'));
 app.use('/api/projects',require('./routes/projects'));
 
 
-const PORT = process.env.PORT;
+const PORT = 8080 || process.env.PORT;
 app.listen(PORT, (req, res)=>{
     console.log('listening on port')
 })
