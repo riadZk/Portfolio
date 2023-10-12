@@ -7,7 +7,7 @@ export default function Skills() {
   const [skills, setSkills] = useState([]);
   const { darkMode } = useContext(ModeContext);
   useEffect(() => {
-    Axios.get('portfolio-seven-snowy-98.vercel.app/api/skills')
+    Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/skills')
       .then((res) => setSkills(res.data))
       .catch((error) => console.error('Error fetching skills:', error));
       console.log(skills)
