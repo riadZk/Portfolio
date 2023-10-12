@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon App"
+    "start": "node index.js"
   },
   "author": "",
+  "engines": {
+    "node": "18.15.0"
+  },
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
