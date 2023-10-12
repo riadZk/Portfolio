@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import Button from './Button';
-import { ModeContext } from '../../../context/Context';
+import { ModeContext } from '../../context/Context'
 const Hero = () => {
     const GIF = './images/Developer.gif'
     const el = useRef(null);
@@ -20,21 +20,6 @@ const Hero = () => {
         };
     }, []);
     const {darkMode} = useContext(ModeContext)
-    // const btn = document.querySelector('.ScrollToTop');
-    // window.scroll = function(){
-    //     if(window.screenY >= 80){
-    //         btn.style.display = 'block';
-    //     }else{
-    //         btn.style.display = 'none';
-    //     }
-    // }
-    // const scrollup = ()=>{
-    //     window.scrollTo({
-    //         top:0,
-    //         right:0,
-    //         behavior:'smooth'
-    //     })
-    // }
     return (
             <div className={darkMode && 'dark'}>
                 <section className='pt-10 px-10 text-white dark:text-smallTextColor dark:bg-white bg-smallTextColor'>
@@ -101,9 +86,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </section>
-                {/* <button onclick={scrollup} className='ScrollToTop'>
-                    UP
-                </button> */}
             </div>
     )
 }

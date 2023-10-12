@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ModeContext } from '../../../context/Context'
+import { ModeContext } from '../../context/Context'
 import {HiOutlineDocumentText} from 'react-icons/hi2'
 const About = () => {
     const { darkMode } = useContext(ModeContext)

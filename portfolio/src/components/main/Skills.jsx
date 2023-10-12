@@ -1,12 +1,11 @@
 import React, { useContext , useEffect , useState } from 'react';
-import { ModeContext } from '../../../context/Context';
+import { ModeContext } from '../../context/Context'
 import Axios from 'axios';
 
 
 export default function Skills() {
   const [skills, setSkills] = useState([]);
   const { darkMode } = useContext(ModeContext);
-
   useEffect(() => {
     Axios.get('http://localhost:3090/api/skills')
       .then((res) => setSkills(res.data))

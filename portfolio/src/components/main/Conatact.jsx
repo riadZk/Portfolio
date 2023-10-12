@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ModeContext } from '../../../context/Context'
+import { ModeContext } from '../../context/Context'
 
 const Conatact = () => {
   const { darkMode } = useContext(ModeContext)

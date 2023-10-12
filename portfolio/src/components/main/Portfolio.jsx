@@ -1,14 +1,13 @@
 import React, { useContext, useState , useEffect } from 'react'
-// import data from '../../../assets/data/portfolioData'
 import Axios from 'axios'
 import Model from './Model'
-import { ModeContext } from '../../../context/Context'
+import { ModeContext } from '../../context/Context'
 const Portfolio = () => {
     const [data , setData] = useState([])
     const [showModal,setShowModal] = useState(false)
     const [activeID,setActiveID] = useState(false)
     const showModalHandler = (_id) =>{
-            setActiveID(_id);  // Removed JSON.parse, assuming _id is a string
+            setActiveID(_id);
             setShowModal(true);
     }
     const { darkMode} = useContext(ModeContext);

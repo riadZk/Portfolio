@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import { useContext } from 'react';
-import { ModeContext } from '../../../context/Context';
+import { ModeContext } from '../../context/Context'
 import  Axios from 'axios';
 const Model = ({ activeID, setShowModal }) => {
   const { darkMode} = useContext(ModeContext)
@@ -11,7 +11,7 @@ const Model = ({ activeID, setShowModal }) => {
   }, []);
   const portfolio = portfolios.find((prt) => prt._id === JSON.parse(activeID));
   if (!portfolio) {
-    return null;  // Handle the case where the portfolio is not found
+    return null;
 }
   return (
     <div className={darkMode && 'dark'}>
