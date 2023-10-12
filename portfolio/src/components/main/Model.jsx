@@ -4,7 +4,8 @@ import { ModeContext } from '../../context/Context'
 import  Axios from 'axios';
 const Model = ({ activeID, setShowModal }) => {
   const { darkMode} = useContext(ModeContext)
-  const [portfolios , setPortfolios] = useState([])
+  const [portfolios , setPortfolios] = useState([]);
+  Axios.defaults.withCredentials = true;
   useEffect(() => {
       Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/projects')
       .then((res) => setPortfolios(res.data))
