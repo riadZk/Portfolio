@@ -6,6 +6,7 @@ import Axios from 'axios';
 export default function Skills() {
   const [skills, setSkills] = useState([]);
   const { darkMode } = useContext(ModeContext);
+  Axios.defaults.withCredentials = true;
   useEffect(() => {
     Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/skills')
       .then((res) => setSkills(res.data))
