@@ -8,11 +8,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Skills
-app.use('/api/skills',require('./routes/skills'));
+// Test
 app.get('/',(req,res) =>{
     res.send('Server is running');
 })
+
+// Skills
+app.use('/api/skills',require('./routes/skills'));
+
 // Projects
 app.use('/api/projects',require('./routes/projects'));
 
