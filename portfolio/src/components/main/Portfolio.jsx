@@ -11,6 +11,7 @@ const Portfolio = () => {
             setShowModal(true);
     }
     const { darkMode} = useContext(ModeContext);
+    Axios.defaults.withCredentials = true;
     useEffect(() => {
         Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/projects')
           .then((res) => setData(res.data))
