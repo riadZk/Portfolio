@@ -6,7 +6,7 @@ const Model = ({ activeID, setShowModal }) => {
   const { darkMode} = useContext(ModeContext)
   const [portfolios , setPortfolios] = useState([])
   useEffect(() => {
-      Axios.get(https://portfolio-seven-snowy-98.vercel.app/api/projects')
+      Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/projects')
       .then((res) => setPortfolios(res.data))
   }, []);
   const portfolio = portfolios.find((prt) => prt._id === JSON.parse(activeID));
