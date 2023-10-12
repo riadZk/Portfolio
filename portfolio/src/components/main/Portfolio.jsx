@@ -12,7 +12,7 @@ const Portfolio = () => {
     }
     const { darkMode} = useContext(ModeContext);
     useEffect(() => {
-        Axios.get('portfolio-seven-snowy-98.vercel.app/api/projects')
+        Axios.get('https://portfolio-seven-snowy-98.vercel.app/api/projects')
           .then((res) => setData(res.data))
           .catch((error) => console.error('Error fetching skills:', error));
       }, []);
