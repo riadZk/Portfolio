@@ -26,10 +26,10 @@ const About = () => {
                             className='lg:w-2/3 w-full md:basis-1/2'>
                             <p
                                 className='flex lg:gap-2 w-full font-[500] text-[15px] my-4 leading-7 '>
-                                Hello!  I'm Riad Zakaria from casablanca <br />
+                                I'm Riad Zakaria from casablanca <br />
                                 I am a full stack web developer with a passion for interactive and
                                 responsive web applications. I have experience working with JavaScript,
-                                React, Bootstrap, php-mysql, Express tailwindcss Mongodb and git
+                                Reactjs, Bootstrap, php,mysql, Express tailwindcss Mongodb and git
                                 I am a quik learner and I am always looking to expand my knowledge and skill set.
                                 Beyond the world of code, I have a keen interest in football,
                                 finding joy in both playing and watching the beautiful game.
