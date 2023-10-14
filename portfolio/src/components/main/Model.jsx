@@ -16,50 +16,44 @@ const Model = ({ activeID, setShowModal }) => {
 }
   return (
     <div className={darkMode && 'dark'}>
-      <div 
-          className=
-            'w-full h-auto fixed top-1/2 left-0 z-10 bg-opacity-40'>
-        <div 
-            className='max-h-[420px] md:w-full w-11/12
-                         md:max-w-[400px] bg-white
-                         dark:bg-gray-100
-                        absolute top-1/2 left-1/2 z-20
-                        rounded-lg transform -translate-x-1/2 p-5
-                        -translate-y-1/2'>
-          <div className='w-[300px] ml-7 h-1/2'>
-            <figure>
-              <img src={portfolio.ImgSrc} alt='' className='rounded-lg' />
-            </figure>
+          <div className={darkMode && 'dark'}>
+      <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[80%] max-w-[400px] bg-white dark:bg-gray-100 rounded-lg p-5 min-h-[200px] max-h-[440px] md:max-h-[420px]'>
+        <div className='group w-full mt-1 relative'>
+          <figure className='' >
+            <img src={portfolio.imgUrl} alt='' className='rounded-lg' />
+          </figure>
+          <div className='w-full h-full rounded-lg bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
+            <div className='w-full h-full flex items-center justify-center'>
+              <button className='text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-lg'>
+              <i class="ri-github-fill"> </i> Code
+              </button>
+            </div>
           </div>
-          <div>
-            <h2 className='text-xl text-headingColor font-[500]'>
-              {portfolio.Title}
-            </h2>
-            <p className='text-[15px] leading-7 text-smallTextColor'>
-              {portfolio.Description}
-            </p>
-            <h4 className='text-headingColor text-[18px] text-[700]'>
-              Skills:<br/>
-              {portfolio.Technologies.map((item, index) => (
-                <span
-                  key={index}
-                  className='bg-gray-200 py-1 ml-1 px-4 rounded-md text-[10px]'
-                >
-                  {item}
-                </span>
-              ))}
-            </h4>
-            <a href={portfolio.UrlP} target='_blanck'>
-            <button className='lg:my-2 my-4  text-white py-2 px-4 rounded-lg font-[500] bg-headingColor ease-in duration-200'>
-            <i class="ri-github-fill"> </i> Github 
-            </button>
-            </a>
-          </div>
-          <button onClick={()=>setShowModal(false)} className='w-[1.8rem] bg-transparent absolute top-[.3rem] right-[1rem] text-[25px] flex items-center justify-center rounded-lg leading-0 cursor-pointer'>
-          <i class="ri-close-line"></i>
-          </button>
         </div>
+        <div>
+          <h2 className=' text-lg text-headingColor font-semibold'>
+            {portfolio.title}
+          </h2>
+          <p className='text-sm leading-5 text-gray-800'>
+            {portfolio.description}
+          </p>
+          <h4 className='text-headingColor text-sm font-semibold'>
+            <span>Skills:</span> <br />
+            {portfolio.technologies.map((item, index) => (
+              <button
+                key={index}
+                className='bg-gray-200 py-1 ml-1 px-2 rounded-md text-xs'
+              >
+                {item}
+              </button>
+            ))}
+          </h4>
+        </div>
+        <button onClick={() => setShowModal(false)} className='absolute top-[2px] right-2 text-2xl flex items-center justify-center rounded-lg leading-0 cursor-pointer'>
+          <i className="ri-close-line"></i>
+        </button>
       </div>
+    </div>
     </div>
   );
 };
