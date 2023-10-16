@@ -5,9 +5,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      style: ['Alef', 'sans-serif']
+    },
     extend: { 
       colors: {
-      primaryColor: "#8873ef",
+      primaryColor: "rgba(0, 0, 0, 0.6)",
       headingColor: "#081e21",
       smallTextColor: "#040D12",
       colorButton:"#4e465e",
@@ -18,9 +21,10 @@ module.exports = {
       hovercolor:"#5d5d5d",
       color3:"#04364A",
       Footer:"#383d41",
-      Footer2:"hsl( 210 , 20% ,20%)",
-
-    },},
+      Light:"#fafafa"
+    },
+  }
+    ,
   },
   plugins: [],
 }
