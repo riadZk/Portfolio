@@ -33,6 +33,7 @@ To view a live example, <a href="https://riadzakaria.vercel.app/">click here</a>
 ```
 # Start the project
 ```
+ npm install
  npm start
 ```
 
