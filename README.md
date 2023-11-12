@@ -19,8 +19,7 @@ This project was developed using the following technologies:
   ✔ Contact Me<br>
   ✔ Resume<br>
 </ul>
-To view a live example, <a href="https://riadzk
-.vercel.app/">click here</a>
+To view a live example, <a href="https://riadzk.vercel.app/">click here</a>
 
 
 
