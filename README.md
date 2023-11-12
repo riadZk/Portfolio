@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-<h5>My personal portfolio <a href="https://riadzakaria.vercel.app/">RiadZk</a> which features some of my github projects as well as my resume and technical skills.</h5>
+<h5>My personal portfolio <a href="https://riadzk.vercel.app/">RiadZk</a> which features some of my github projects as well as my resume and technical skills.</h5>
 This project was developed using the following technologies:
 <ul>
   <li>ReactJs</li>
@@ -19,7 +19,8 @@ This project was developed using the following technologies:
   ✔ Contact Me<br>
   ✔ Resume<br>
 </ul>
-To view a live example, <a href="https://riadzakaria.vercel.app/">click here</a>
+To view a live example, <a href="https://riadzk
+.vercel.app/">click here</a>
 
 
 
